@@ -1,0 +1,43 @@
+.titlebar {
+  height: 30px;
+  background: #636363;
+  user-select: none;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed; /* 固定在页面顶部 */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* 确保位于最上层 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 添加轻微阴影 */
+}
+
+.titlebar-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  user-select: none;
+  -webkit-user-select: none;
+  cursor: pointer; /* 添加鼠标悬浮效果 */
+}
+
+.titlebar-button:hover {
+  background: #808080; /* 悬浮时的背景颜色 */
+}
+
+.title {
+  top: 5px;
+  position: absolute;
+  left: 10px;
+  font-size: 18px;
+  color: black; /* 设置文字颜色为黑色 */
+  font-family: 'Microsoft YaHei', sans-serif; /* 设置字体为微软雅黑 */
+}
+
+body {
+  margin: 0; /* 移除默认边距 */
+  padding-top: 30px; /* 确保内容从 titlebar 下方开始显示 */
+  font-family: Arial, sans-serif; /* 设置字体（可选） */
+}
